@@ -14,7 +14,11 @@ Installation can be accomplished using npm:
 
 # Documentation
 
-TODO
+```ts
+import { useObservable } from "@residualeffect/rereactor";
+
+// TODO here
+```
 
 # License
 
