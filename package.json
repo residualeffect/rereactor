@@ -1,0 +1,41 @@
+{
+  "name": "@residualeffect/rereactor",
+  "version": "1.0.0",
+  "private": false,
+  "author": "ResidualEffect",
+  "description": "React hooks for @residualeffect/reactor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/residualeffect/rereactor.git"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib .output",
+    "lint": "eslint **/*.ts",
+    "build:tsc": "tsc",
+    "build": "run-s clean lint build:tsc",
+    "watch": "tsc --watch"
+  },
+  "peerDependencies": {
+    "@residualeffect/reactor": ">=4.0.0",
+    "react": ">=16.8"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.43",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "3.0.2",
+    "typescript": "^4.6.3"
+  },
+  "sideEffects": false,
+  "files": [
+    "lib/"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

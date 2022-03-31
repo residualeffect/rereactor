@@ -1,0 +1,27 @@
+{
+	"cSpell.words": [
+		"residualeffect"
+	],
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"eslint.format.enable": true,
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "boundary",
+	"files.exclude": {
+		"node_modules": true
+	},
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"[typescript]": {
+		"editor.formatOnSave": true
+	},
+	"search.exclude": {
+		"node_modules": true,
+		".output": true,
+		"lib": true
+	}
+}
