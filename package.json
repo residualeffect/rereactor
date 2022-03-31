@@ -19,8 +19,8 @@
     "watch": "tsc --watch"
   },
   "peerDependencies": {
-    "@residualeffect/reactor": ">=4.0.0",
-    "react": ">=16.8"
+    "@residualeffect/reactor": ">=4.1.0",
+    "react": ">=17.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.43",
@@ -36,6 +36,6 @@
     "lib/"
   ],
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=16.0.0"
   }
 }
