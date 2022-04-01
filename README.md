@@ -14,10 +14,38 @@ Installation can be accomplished using npm:
 
 # Documentation
 
-```ts
-import { useObservable } from "@residualeffect/rereactor";
+Implement your application logic using reactor.  For example:
 
-// TODO here
+```ts
+import { Observable, Computed } from "@residualeffect/reactor";
+
+export const t = new Observable(3);
+export const c = new Computed(() => t.Value * 2);
+
+export function DoSomething() {
+	t.Value = t.Value + 1;
+}
+```
+
+And then utilize your application logic in a react component:
+
+```tsx
+import { useObservable, useComputed } from "@residualeffect/rereactor";
+
+const ExampleComponent: React.FC = () => {
+	const observedValue = useObservable(t);
+	const observedComputed = useObservable(c);
+	const inlineComputed = useComputed(() => t.Value + 1);
+
+	return (
+		<>
+			<div>Value: {observedValue}</div>
+			<div>Computed Value: {observedComputed}</div>
+			<div>Generated Computed: {inlineComputed}</div>
+			<button onClick={DoSomething}>Go</button>
+		</>
+	);
+};
 ```
 
 # License
