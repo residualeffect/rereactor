@@ -1,6 +1,6 @@
 {
   "name": "@residualeffect/rereactor",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": false,
   "author": "ResidualEffect",
   "description": "React hooks for @residualeffect/reactor",
