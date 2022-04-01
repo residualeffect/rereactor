@@ -2,7 +2,7 @@
 
 React hooks for @residualeffect/reactor
 
-![Node.js CI](https://github.com/residualeffect/rereactor/workflows/Node.js%20CI/badge.svg?branch=master)
+![Node.js CI](https://github.com/residualeffect/rereactor/workflows/Node.js%20CI/badge.svg?branch=main)
 
 [Changelog](CHANGELOG.md)
 
