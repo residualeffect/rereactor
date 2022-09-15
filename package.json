@@ -1,6 +1,6 @@
 {
   "name": "@residualeffect/rereactor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": false,
   "author": "ResidualEffect",
   "description": "React hooks for @residualeffect/reactor",
@@ -19,7 +19,7 @@
     "watch": "tsc --watch"
   },
   "peerDependencies": {
-    "@residualeffect/reactor": ">=4.1.0",
+    "@residualeffect/reactor": ">=4.2.1",
     "react": ">=17.0"
   },
   "devDependencies": {
