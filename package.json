@@ -1,6 +1,6 @@
 {
   "name": "@residualeffect/rereactor",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "private": false,
   "author": "ResidualEffect",
   "description": "React hooks for @residualeffect/reactor",
@@ -14,22 +14,32 @@
   "scripts": {
     "clean": "rimraf lib .output",
     "lint": "eslint **/*.ts",
+    "test": "jest --no-cache --coverage --runInBand --no-color --verbose",
     "build:tsc": "tsc",
-    "build": "run-s clean lint build:tsc",
+    "build": "run-s clean lint test build:tsc",
+    "test-watch": "jest --watch",
     "watch": "tsc --watch"
   },
   "peerDependencies": {
     "@residualeffect/reactor": ">=4.2.1",
-    "react": ">=17.0"
+    "react": ">=17.0",
+    "use-sync-external-store": ">=1.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.1",
     "@types/react": "^17.0.43",
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
-    "eslint": "^8.23.1",
+    "@types/use-sync-external-store": "^0.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "eslint": "^8.40.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "npm-run-all": "4.1.5",
-    "rimraf": "3.0.2",
-    "typescript": "^4.8.3"
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
   },
   "sideEffects": false,
   "files": [
