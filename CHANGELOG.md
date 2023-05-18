@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.0.0] - 2023-05-18
+### Fixed
+* Removed usages of use-sync-external-store shim since it was causing undesirable behavior
+
 ## [2.0.0] - 2023-05-05
 ### Updated
 * Take advantage of use-sync-external-store shim in useObservable to take advantage of react 18 features and be compatible with older versions of react.  You can use useObservableLegacy to avoid this.
